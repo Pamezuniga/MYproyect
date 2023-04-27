@@ -1,0 +1,21 @@
+<div class="accordion" id="accordionExample">
+  
+  <div *ngFor="let servi of services" class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" attr.data-bs-target='#c{{servi.id}}' aria-expanded="true" aria-controls="collapseOne">
+        {{servi.titulo}}
+      </button>
+    </h2>
+    <div id="c{{servi.id}}" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>{{servi.descripcion}} </strong> 
+        
+      
+      </div>
+    </div>
+  </div>
+  
+      
+  
+    
+</div>
